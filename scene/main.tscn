@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1l0ox6palem4"]
+[gd_scene load_steps=8 format=3 uid="uid://c1l0ox6palem4"]
 
 [ext_resource type="Texture2D" uid="uid://bqokhcusvsnxc" path="res://asset/PathAndObjects.png" id="1_rel5m"]
 [ext_resource type="Script" path="res://script/CharacterBody2D.gd" id="2_7ys5o"]
 [ext_resource type="Texture2D" uid="uid://dydjlgiou1w05" path="res://asset/player.png" id="3_4ytik"]
+[ext_resource type="PackedScene" uid="uid://cyaygi3frbhhm" path="res://scene/testing_obj.tscn" id="4_15n8j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ciaq"]
 texture = ExtResource("1_rel5m")
@@ -290,3 +291,5 @@ texture = ExtResource("3_4ytik")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(31, 37)
 shape = SubResource("CapsuleShape2D_8v307")
+
+[node name="testing_obj" parent="." instance=ExtResource("4_15n8j")]
